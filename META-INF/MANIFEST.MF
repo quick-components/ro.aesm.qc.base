@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: QC framework base
+Bundle-SymbolicName: ro.aesm.qc.base
+Bundle-Version: 0.0.1.qualifier
+Export-Package: 
+ ro.aesm.qc.base,
+ ro.aesm.qc.base.db,
+ ro.aesm.qc.base.util
+Import-Package: ro.aesm.qc.api,
+ ro.aesm.qc.api.base,
+ ro.aesm.qc.api.exception,
+ ro.aesm.qc.api.meta,
+ ro.aesm.qc.api.meta.component
+Automatic-Module-Name: ro.aesm.qc.base
+Bundle-RequiredExecutionEnvironment: JavaSE-11
