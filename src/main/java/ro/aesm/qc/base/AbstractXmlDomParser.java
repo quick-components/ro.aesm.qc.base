@@ -78,6 +78,10 @@ public abstract class AbstractXmlDomParser {
 		return this.getValue(node, null, null);
 	}
 
+	protected String getValue(Node node, String nsTag) {
+		return this.getValue(node, nsTag, null);
+	}
+
 	protected String getValue(Node node, String nsTag, String defaultValue) {
 		if (nsTag == null) {
 			return ((Element) node).getTextContent();

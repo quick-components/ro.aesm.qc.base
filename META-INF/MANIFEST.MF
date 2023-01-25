@@ -11,6 +11,7 @@ Import-Package: ro.aesm.qc.api,
  ro.aesm.qc.api.base,
  ro.aesm.qc.api.exception,
  ro.aesm.qc.api.meta,
- ro.aesm.qc.api.meta.component
+ ro.aesm.qc.api.meta.component,
+ com.zaxxer.hikari,org.slf4j,org.mariadb.jdbc
 Automatic-Module-Name: ro.aesm.qc.base
-Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

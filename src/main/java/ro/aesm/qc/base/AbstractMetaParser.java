@@ -18,8 +18,12 @@ public abstract class AbstractMetaParser extends AbstractXmlDomParser implements
 		super();
 		this.getNamespaceMap().put(Constants.META_XMLNS_ALIAS, Constants.META_XMLNS);
 	}
-	
-	public abstract IMetaComponentModel parse(Node node) throws QcResourceException;
+
+	public IMetaComponentModel parse(Node node) throws QcResourceException {
+		return this.parse(node, false);
+	}
+
+	public abstract IMetaComponentModel parse(Node node, boolean nested) throws QcResourceException;
 
 	public Map<String, IMetaComponentModel> parseChildrenAsMap(Node node) throws QcResourceException {
 		Map<String, IMetaComponentModel> result = new HashMap<>();
